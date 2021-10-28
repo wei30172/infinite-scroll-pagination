@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scroll Pagination with Firestore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container"></div>
+    <div class="loading">loading reviews...</div>
+  
+    <div class="load-more">
+      <button>Load More</button>
+    </div>
+  
+    <!-- Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+  
+    <script>
+      // TODO: Replace with your project's customized code snippet
+      var firebaseConfig = {
+        apiKey: "AIzaSyBnOo4uNBr8O1OxkGYLD1F2SQ4rkmANokw",
+        authDomain: "pagination-scroll-c97af.firebaseapp.com",
+        projectId: "pagination-scroll-c97af",
+        storageBucket: "pagination-scroll-c97af.appspot.com",
+        messagingSenderId: "391431050843",
+        appId: "1:391431050843:web:79621d8f7987c0891c517e"
+      };
+      // var firebaseConfig = {
+      //   apiKey: "YOUR-API-KEY",
+      //   authDomain: "YOUR AUTH DOMAIN",
+      //   databaseURL: "YOUR DATABASEURL",
+      //   projectId: "YOUR PROJECT ID",
+      //   storageBucket: "YOUR STORAGE BUCKET",
+      //   messagingSenderId: "YOUR MESSAGING SENDER ID",
+      //   appId: "YOUR APP ID"
+      // };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+    <script src="index.js"></script>
+  </body>
